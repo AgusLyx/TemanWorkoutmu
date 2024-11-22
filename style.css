@@ -2,6 +2,7 @@
 
 
 
+
 *{
   padding: 0;
   margin: 0;
@@ -301,7 +302,7 @@ input[type=radio] ~ div {
   transition: max-height 0.5s;
 }
 input[type=radio]:checked ~ div {
-  max-height: 50px;
+  max-height: 30px;
 }
  
 .wrapper {
@@ -334,4 +335,4 @@ bottom: 150%;
   .icons {
     top: ;
   }*/
-}
+  }
