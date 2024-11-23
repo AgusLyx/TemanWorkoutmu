@@ -1,14 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 
-
-
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 header{
@@ -55,7 +54,7 @@ body{
   color: white;
   margin-left: 60px;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 6000;
   border-bottom: 2px solid transparent;
   transition: all .55s ease;
 }
@@ -90,7 +89,7 @@ body{
   text-align: center;
   font-size: 30px;;
   line-height: 40px;
-  top: -21%;
+  top: -30%;
 }
 
 section {
@@ -155,14 +154,20 @@ top: 10%;
   max-width: 90%;
   text-align: left;
   left: 5%;
-  bottom: 112%;
+  bottom: 118%;
+  color: #023336;;
+}
+
+.accordion h1 {
+  text-align: center;
 }
 
 article {
   border: 1px solid #fff;
   padding: 1em;
-  margin: 1em auto;
+  margin: 8px auto;
   background: #42445A24;
+  border-radius: 25px;
 }
 
 input[type=radio] {
@@ -176,10 +181,10 @@ input[type=radio] {
 input[type=radio] ~ div {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s;
+  transition: max-height 1s;
 }
 input[type=radio]:checked ~ div {
-  max-height: 200px;
+  max-height: 150px;
 }
 
 @media screen and (max-width: 476px) {
@@ -209,7 +214,7 @@ input[type=radio]:checked ~ div {
     margin-left: 0;
     display: block;
     font-size: 15px;
-    margin: 7px 0;
+    margin: 2px 0;
   }
 
   .navlist.open {
@@ -268,6 +273,18 @@ box-shadow: -1px 5px 13px 0px rgba(0,0,0,0.41);
   top: 45%;
 }
 
+/*.accordion {
+  font-size: 11px;
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  text-align: left;
+  left: 5%;
+  top: 50%;
+}*/
+
 .accordion {
   font-size: 11px;
   position: absolute;
@@ -277,15 +294,20 @@ box-shadow: -1px 5px 13px 0px rgba(0,0,0,0.41);
   max-width: 90%;
   text-align: left;
   left: 5%;
-  bottom: 18%;
+  top: 40%; 
   
+}
+
+.accordion h1{
+  text-align: center;
 }
 
 article {
   border: 1px solid #fff;
   padding: 1em;
-  margin: 1em auto;
+  margin: 5px auto;
   background: #42445A24;
+  
 }
 
 input[type=radio] {
@@ -299,24 +321,34 @@ input[type=radio] {
 input[type=radio] ~ div {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s;
+  transition: max-height 1s;
 }
 input[type=radio]:checked ~ div {
-  max-height: 30px;
+  max-height: 70px;
 }
  
-.wrapper {
+/*.wrapper {
   height: 20vh;
   width: auto;
   position: absolute;
   display: grid;
-  
   justify-content: center;
   align-items: center;
   top: 23%;
   left: 0%;
  right: 0%;
- 
+}*/
+
+.wrapper {
+  height: 20vh;
+  width: auto;
+  position: absolute ;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  top: 20%; /* Sesuaikan agar selaras dengan accordion */
+  left: 0%;
+  right: 0%;
 }
 
 .text {
@@ -327,12 +359,15 @@ input[type=radio]:checked ~ div {
   text-align: center;
   font-size: 15px;;
   line-height: 15px;
-
 bottom: 150%;
+}
+
+.text h4 {
+  line-height: 16px;
 }
 
 /*@media screen and (max-width: 767px) {
   .icons {
     top: ;
   }*/
-  }
+}
