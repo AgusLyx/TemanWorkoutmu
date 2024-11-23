@@ -24,7 +24,11 @@
   <!-- animate link -->
   <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
+  />
+  
+  <!-- aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
   
 
@@ -35,20 +39,21 @@
 </head>
 
 
-<div class="background animate_animated animate__fadeIn">
-    <i class="bx bxs-leaf animate_animated animate__fadeInLeft" id="daun-1"></i>
+<div class="background">
+    <i class="bx bxs-leaf" id="daun-1"></i>
     <i class='bx bxs-bowl-rice' id="nasi"></i>
     <i class='bx bx-dumbbell' id="dumbbell"></i>
   </div>
 
 
 <body>
-  <header class="animate_animated animate__fadeInLeft">
+  <header>
     <i class='bx bx-dumbbell' id="dumbell"></i>
     <ul class="navlist"  id="menu-list">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
     </ul>
     <div class="bx bx-menu" id="menu-icon"></div>
   </header>
@@ -57,27 +62,62 @@
   </section>
   
   <section class="wrapper">
-    <div class="text animate_animated animate__fadeInLeft">
+    <div class="text">
       <h1>Selamat Datang</h1><br><br>
-      <h4>Hai! Selamat datang di TemanWorkoutmu, tujuan website ini dibuat adalah untuk membantu teman-teman pemula yang ingin mendalami tentang olahraga angkat beban dan kesehatan, aku siap memandu dan melihat progress mu setiap saat, semangat untuk merubah dirimu!</h4><br><br><br>
-      <h1>Beginner Tips</h1><br><br><br><br>
+      <h4>Hai! Selamat datang di TemanWorkoutmu, tujuan website ini dibuat adalah untuk membantu teman-teman pemula yang ingin mendalami tentang olahraga angkat beban dan kesehatan, aku siap memandu dan melihat progress mu setiap saat, semangat untuk merubah dirimu!</h4>
+    <!--  <h1>Beginner Tips</h1><br><br><br><br>-->
     </div>
   </section>
     <div class="accordion">
-    
+      
+     <h1>Beginner Tips</h1>
+     
     <article>
       <input id="article1" type="radio" name="articles" checked>
       <label for="article1">
         <h2>Cara Memulai Workout Untuk Pemula</h2>
       </label>
       <div>
-        Kalian bisa melakukan Body Weight Training seperti Push Up, Pull Up dan Dips. <a href="https://youtu.be/-QNEm6j9eGc?si=Jk2GJzgHNDjIdRmk">Klik disini</a> untuk panduan tentang Body Weight Training
+        Kalian bisa melakukan Body Weight Training seperti Push Up, Pull Up dan Dips. <a href="https://youtu.be/-QNEm6j9eGc?si=Jk2GJzgHNDjIdRmk">Klik disini</a> untuk panduan tentang Body Weight Training.
       </div>
     </article>
     
     <article>
       <input id="article2" type="radio" name="articles">
       <label for="article2">
+        <h2>Lakukan Gerakan Dengan Form Yang Bagus</h2>
+      </label>
+      <div>
+        Lakukan semua gerakan dengan form yang bagus dan terkontrol, jangan sesekali ego lifting karena sangat beresiko terjadinya cedera.
+      </div>
+    </article>
+    
+    <article>
+      <input id="article3" type="radio" name="articles">
+      <label for="article3">
+        <h2>Tambahkan Beban Atau Tingkat Kesulitan Ketika Kamu Sudah Merasa Ringan</h2>
+      </label>
+      <div>
+        Ketika kamu sudah merasa ringan terhadap beban atau gerakan yang kamu lakukan, maka naikan beban atau tingkat kesulitan <a href="https://www.yellowfitkitchen.com/detailarticle/membentuk-otot-dengan-metode-progressive-overload">(Progressive Overload)</a> agar otot mu bisa berkembang.
+      </div>
+    </article>
+    
+    <article>
+      <input id="article4" type="radio" name="articles">
+      <label for="article4">
+        <h2>Jadwal Latihan</h2>
+      </label>
+      <div>
+        Sesuaikan jadwal latihan mu dengan aktivitas mu, kamu bisa pakai jadwal <a href="https://youtu.be/vYv2KNrEFHs?si=omMGpBVjlrQkcDg_">Push Pull Leg</a> atau <a href="https://youtu.be/KeNObkhENKQ?si=Rb0nG7uJeGBLKVYP">Full Body Workout</a> untuk pemula.
+      </div>
+    </article>
+    <br><br><br>
+    
+    <h1>Intermediate Tips</h1>
+    
+    <article>
+      <input id="article5" type="radio" name="articles">
+      <label for="article5">
         <h2>Cooming Soon</h2>
       </label>
       <div>
@@ -86,13 +126,23 @@
     </article>
     
     <article>
-      <input id="article3" type="radio" name="articles">
-      <label for="article3">
+      <input id="article6" type="radio" name="articles">
+      <label for="article6">
         <h2>Cooming Soon</h2>
       </label>
       <div>
         Silahkan menunggu minggu depan! Karena website ini akan update setiap satu kali dalam satu minggu!
       </div>
+    </article>
+    
+    <article>
+    <input id="article7" type="radio" name="articles">
+    <label for="article7">
+      <h2>Cooming Soon</h2>
+    </label>
+    <div>
+      Silahkan menunggu minggu depan! Karena website ini akan update setiap satu kali dalam satu minggu!
+    </div>
     </article>
     
     </div>
@@ -105,5 +155,6 @@
   
   <!-- Project -->
   <script src="main.js"></script>
+
  </body>
 </html>
