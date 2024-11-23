@@ -84,12 +84,16 @@ section {
 }
 
 .text {
+  position: relative;
+  display: grid;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
-  height: 800px;
-  width:700px;
-  margin: 0 0 5px;
+  font-size: 50px;
+  height: 1300px;
+  width: 750px;
+  right: 5%;
+  bottom: 5%;
+  color: #023336;
 }
 
 .text h1 {
@@ -147,7 +151,7 @@ section {
     margin-left: 0;
     display: block;
     font-size: 15px;
-    margin: 7px 0;
+    margin: 2px 0;
   }
 
   .navlist.open {
@@ -179,8 +183,9 @@ section {
     display: grid;
     justify-content: center;
     align-items: center;
-    width: 50px;
+    width: 900px;
     height: auto;
+    font-size: 17px;
   }
 
   .text h1 {
