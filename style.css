@@ -126,6 +126,7 @@ section {
   height: 50%;
   width: auto;
 top: 10%;
+
 }
 
 .background #daun-1 {
@@ -137,13 +138,16 @@ top: 10%;
   position: relative;
   font-size: 900px;
   top: 10%;
+  animation-delay: 0.3s;
 }
 
 .background #dumbbell {
   position: relative;
   font-size: 900px;
-  top: 17%;
+  top: 15%;
+  animation-delay: 0.6s;
 }
+
 
 .accordion {
   font-size: 25px;
@@ -158,8 +162,13 @@ top: 10%;
   color: #023336;;
 }
 
+.accordion article {
+  animation-duration: 1.5s;
+}
+
 .accordion h1 {
   text-align: center;
+  animation-duration: 1.5s;
 }
 
 article {
@@ -181,7 +190,7 @@ input[type=radio] {
 input[type=radio] ~ div {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1s;
+  transition: max-height 0.7s;
 }
 input[type=radio]:checked ~ div {
   max-height: 150px;
@@ -258,19 +267,20 @@ box-shadow: -1px 5px 13px 0px rgba(0,0,0,0.41);
   position: relative;
   font-size: 350px;
   top: 20%;
-  
 }
 
 .background #nasi {
   position: relative;
   font-size: 350px;
   top: 35%;
+  animation-delay: 0.3s;
 }
 
 .background #dumbbell {
   position: relative;
   font-size: 350px;
   top: 45%;
+  animation-delay: 0.6s;
 }
 
 /*.accordion {
@@ -321,7 +331,7 @@ input[type=radio] {
 input[type=radio] ~ div {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1s;
+  transition: max-height 0.7s;
 }
 input[type=radio]:checked ~ div {
   max-height: 70px;
