@@ -93,7 +93,7 @@ section {
 
 .icons {
   position: absolute;
-  top: 62%;
+  top: 65%;
   right: 46%;
   padding: 0 5%;
   transform: translateY(-50%);
@@ -229,7 +229,7 @@ box-shadow: -1px 5px 13px 0px rgba(0,0,0,0.41);
   
   .icons {
   position: absolute;
-  top: 53%;
+  top: 57%;
   left: 34%;
   padding: 0 5%;
   transform: translateY(-50%);
