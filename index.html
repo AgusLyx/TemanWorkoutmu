@@ -24,7 +24,7 @@
   <!-- animate link -->
   <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
   
   <!-- aos -->
@@ -40,9 +40,9 @@
 
 
 <div class="background">
-    <i class="bx bxs-leaf" id="daun-1"></i>
-    <i class='bx bxs-bowl-rice' id="nasi"></i>
-    <i class='bx bx-dumbbell' id="dumbbell"></i>
+    <i class="bx bxs-leaf animate__animated animate__fadeInLeft" id="daun-1"></i>
+    <i class="bx bxs-bowl-rice animate__animated animate__fadeInLeft " data-aos="fade-right" id="nasi"></i>
+    <i class='bx bx-dumbbell' data-aos="fade-right" id="dumbbell"></i>
   </div>
 
 
@@ -62,17 +62,18 @@
   </section>
   
   <section class="wrapper">
-    <div class="text">
+    <div class="text animate__animated animate__fadeInDown" data-aos="fade-down">
       <h1>Selamat Datang</h1><br><br>
       <h4>Hai! Selamat datang di TemanWorkoutmu, tujuan website ini dibuat adalah untuk membantu teman-teman pemula yang ingin mendalami tentang olahraga angkat beban dan kesehatan, aku siap memandu dan melihat progress mu setiap saat, semangat untuk merubah dirimu!</h4>
     <!--  <h1>Beginner Tips</h1><br><br><br><br>-->
     </div>
   </section>
+  
     <div class="accordion">
       
-     <h1>Beginner Tips</h1>
+     <h1 class="animate__animated animate__fadeInLeft">Beginner Tips</h1>
      
-    <article>
+    <article class="animate__animated animate__fadeIn">
       <input id="article1" type="radio" name="articles" checked>
       <label for="article1">
         <h2>Cara Memulai Workout Untuk Pemula</h2>
@@ -82,7 +83,7 @@
       </div>
     </article>
     
-    <article>
+    <article class="animate__animated animate__fadeIn">
       <input id="article2" type="radio" name="articles">
       <label for="article2">
         <h2>Lakukan Gerakan Dengan Form Yang Bagus</h2>
@@ -92,7 +93,7 @@
       </div>
     </article>
     
-    <article>
+    <article class="animate__animated animate__fadeIn">
       <input id="article3" type="radio" name="articles">
       <label for="article3">
         <h2>Tambahkan Beban Atau Tingkat Kesulitan Ketika Kamu Sudah Merasa Ringan</h2>
@@ -102,7 +103,7 @@
       </div>
     </article>
     
-    <article>
+    <article class="animate__animated animate__fadeIn">
       <input id="article4" type="radio" name="articles">
       <label for="article4">
         <h2>Jadwal Latihan</h2>
@@ -113,9 +114,9 @@
     </article>
     <br><br><br>
     
-    <h1>Intermediate Tips</h1>
+    <h1 class="animate__animated animate__fadeInLeft">Intermediate Tips</h1>
     
-    <article>
+    <article class="animate__animated animate__fadeIn">
       <input id="article5" type="radio" name="articles">
       <label for="article5">
         <h2>Cooming Soon</h2>
@@ -125,7 +126,7 @@
       </div>
     </article>
     
-    <article>
+    <article class="animate__animated animate__fadeIn">
       <input id="article6" type="radio" name="articles">
       <label for="article6">
         <h2>Cooming Soon</h2>
@@ -135,7 +136,7 @@
       </div>
     </article>
     
-    <article>
+    <article >
     <input id="article7" type="radio" name="articles">
     <label for="article7">
       <h2>Cooming Soon</h2>
@@ -155,6 +156,10 @@
   
   <!-- Project -->
   <script src="main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
 
  </body>
 </html>
