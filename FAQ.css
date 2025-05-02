@@ -77,26 +77,11 @@ body{
   display: grid;
   align-items: center;
   gap: 2rem;;;
+  
 }
 
 section {
   padding: 0 19%;
-}
-
-.text {
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  height: 800px;
-  width:700px;
-  margin: 0 0 5px;
-}
-
-.text h1 {
-  position: relative;
-  color: white;
-  line-height: 1.5;
-  text-align: center;
 }
 
 .scroll-down {
@@ -119,6 +104,30 @@ section {
   transform: translateY(-5px);
 }
 
+.text1 {
+  position: relative;
+  width: 950px;
+  height: auto;
+  color: #023336;
+  text-align: center;
+  font-size: 30px;;
+  line-height: 50px;
+  top: -30%;
+  right: 18%;
+  display: grid;
+}
+
+.accordion {
+  display: none;
+}
+
+.accordion-item {
+  display: none;
+}
+
+#aduh {
+  display: none;
+}
 
 @media screen and (max-width: 476px) {
 
@@ -167,30 +176,14 @@ section {
     height: auto;
     width: auto;
     gap: 1rem;
-    grid-template-columns: 2fr;
-    margin: 0 0 5px;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
-  }
-
-
-  .text {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: auto;
-  }
-
-  .text h1 {
     position: relative;
-    font-size: 50px;
-    line-height: 1.5;
-    color: white;
-    
   }
 
+
+  
   .scroll-down {
     display: none;
   }
@@ -201,11 +194,82 @@ section {
 -moz-box-shadow: -1px 5px 13px 0px rgba(0,0,0,0.41);
 box-shadow: -1px 5px 13px 0px rgba(0,0,0,0.41);
   }
+  
+  h1 {
+  position: absolute;
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 2rem;
+  top: 80px;
+  left: 42%;
+  color: #023336;
+}
 
+.accordion {
+ position: absolute;
+  width: 80%;
+  max-width: 10000px;
+  margin: 2rem auto;
+  right: 10%;
+  top: 20%;
+  display: block;
+}
+
+.accordion-item {
+  background-color: #42445A24;
+  color: #023336;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+  display: block;
+}
+
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+.text1 {
+  display: none;
+}
+
+#aduh {
+  display: block;
+}
  
 
 /*@media screen and (max-width: 767px) {
   .icons {
     top: ;
   }*/
-}
+      }
